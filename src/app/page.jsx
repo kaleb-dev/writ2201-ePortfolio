@@ -3,6 +3,8 @@
 import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import Image from "next/image";
+import profilePic from "../assets/IMG_1880.JPG";
 
 export default function Home() {
   const projects = [
@@ -36,15 +38,53 @@ export default function Home() {
 
       <section className="bg-black text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
-              Technical Writing Portfolio
-            </h1>
-            <p className="text-xl text-gray-300">
-              A showcase of projects demonstrating my skills in technical
-              documentation, SEO optimization, and user-focused content
-              creation.
-            </p>
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="md:w-2/3">
+              <div className="max-w-3xl">
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl mb-4">
+                  Kaleb Tessema
+                </h1>
+                <p className="text-xl text-gray-300 mb-8">
+                  A showcase of projects demonstrating my skills in technical
+                  documentation, SEO optimization, and user-focused content
+                  creation.
+                </p>
+
+                <h2 className="text-3xl font-bold mb-6">About Me</h2>
+                <p className="text-lg mb-4">
+                  I'm a second-year Information Technology student passionate
+                  about creating clear, effective technical documentation and
+                  coding solutions.
+                </p>
+                <p className="text-lg mb-4">
+                  I enjoy playing all types of sports and when I'm not too busy
+                  with school, I do freelance full-stack development work. Check
+                  out my
+                  <a
+                    href="https://kaleb-tessema-portfolio.vercel.app/"
+                    className="text-blue-300 hover:text-blue-100 ml-1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    portfolio
+                  </a>{" "}
+                  for more of my projects.
+                </p>
+                <p className="text-lg">
+                  My goal is to combine my technical knowledge with strong
+                  communication skills to create documentation that empowers
+                  users and enhances their experience with technology.
+                </p>
+              </div>
+            </div>
+            <div className="md:w-1/3 mt-8 md:mt-0 flex justify-center">
+              <Image
+                src={profilePic}
+                alt="Kaleb Tessema"
+                className="shadow-lg object-cover rounded-full border-4 border-white"
+                style={{ width: "400px", height: "400px" }}
+              />
+            </div>
           </div>
         </div>
       </section>

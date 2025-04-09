@@ -15,7 +15,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto px-4 py-6 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center">
         <div className="flex items-center mb-4 md:mb-0">
           <Link href="/" className="text-xl font-bold tracking-wider">
-            K·PORTFOLIO
+            E-PORTFOLIO
           </Link>
         </div>
         <nav className="flex space-x-8">
